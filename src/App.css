@@ -1,0 +1,65 @@
+.layout {
+    background: #F2F2F2;
+    height: 100vh;
+    position: sticky !important;
+}
+
+.header {
+    background: #F2F2F2;
+    padding-top: 12px;
+}
+
+.content {
+    background: #F2F2F2;
+    margin: 24px;
+    padding: 0 20px;
+}
+
+.footer {
+    background: #F2F2F2;
+    text-align: center;
+    bottom: 0;
+}
+
+.powerbi-frame {
+    height: 100vh;
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+
+.ant-btn:hover {
+    color: #1b6093 !important;
+    border-color: #1b6093 !important;
+}
+
+.ant-btn-primary {
+    background-color: #1b6093;
+}
+
+.ant-btn-primary:hover {
+    background-color: #174f74 !important;
+    color: #fff;
+}
+
+.primary--color {
+    color: #1b6093 !important;
+}
+
+.primary--ligth--color {
+    color: #52b2e8 !important;
+}
+
+.secondary--color {
+    color: #1b6093 !important;
+}
+
+.ligth--color {
+    color: #52b2e8 !important;
+}
+
+.gray--color {
+    color: rgb(182, 181, 181) !important;
+}
