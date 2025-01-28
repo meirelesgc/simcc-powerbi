@@ -15,6 +15,9 @@ const MainContent = () => {
             case "search":
                 setPowerBI('https://app.powerbi.com/view?r=eyJrIjoiOTVmZjM2ZWUtMzliOS00Y2RkLTllYjItMmU3MDg4MjQxOTI5IiwidCI6IjcyNjE3ZGQ4LTM3YTUtNDJhMi04YjIwLTU5ZDJkMGM1MDcwNyJ9');
                 break;
+            case "programs":
+                setPowerBI('https://app.powerbi.com/view?r=eyJrIjoiNmU0MzhlYTAtZGVmZi00NTAxLThhN2UtOTU2NWJkMzNmZjA5IiwidCI6IjcyNjE3ZGQ4LTM3YTUtNDJhMi04YjIwLTU5ZDJkMGM1MDcwNyJ9');
+                break;
         }
     };
 
@@ -36,7 +39,7 @@ const MainContent = () => {
                     options={segmentedConfig}
                     onChange={handleSegmentChange}
                     default='indicators' />
-                <Button href={powerBI} icon={<LinkOutlined />} >Abrir em outra página</Button>
+                <Button href={powerBI} target="_blank" icon={<LinkOutlined />} >Abrir em outra página</Button>
             </Flex>
             <PowerBI powerBI={powerBI} />
         </Flex>

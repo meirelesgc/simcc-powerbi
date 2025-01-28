@@ -1,4 +1,4 @@
-import { AreaChartOutlined, SearchOutlined } from "@ant-design/icons";
+import { AreaChartOutlined, SearchOutlined, AuditOutlined } from "@ant-design/icons";
 const segmentedConfig = [
     {
         label: "Indicadores",
@@ -9,6 +9,11 @@ const segmentedConfig = [
         label: "Busca de informações",
         value: "search",
         icon: <SearchOutlined />
+    },
+    {
+        label: "Programas de pós-graduação",
+        value: "programs",
+        icon: <AuditOutlined />
     }
 ]
 export default segmentedConfig;
