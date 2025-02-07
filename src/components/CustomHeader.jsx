@@ -1,35 +1,36 @@
-import { Card, Flex, Typography } from 'antd'
-import Simcc from '../svg/Simcc';
-import { FaIndustry } from 'react-icons/fa';
+import { Card, Flex, Typography, Popover } from 'antd';
+import { ProductOutlined, ClusterOutlined, SettingOutlined } from '@ant-design/icons';
 
 const CustomHeader = () => {
-    return <Flex align="center" justify="space-between" >
-        <Card >
-            <Flex gap={'large'}>
-                <Typography.Title level={2} strong>
-                    Observatorio do Sistema de Mapeamento de Competências
-                </Typography.Title>
-            </Flex>
-        </Card>
+    const content = (
+        <div>
+            <p><ClusterOutlined style={{ marginRight: 8 }} /><a href="https://simcc.uesc.br/" target="_blank" rel="noopener noreferrer">SIMCC</a></p>
+            <p><SettingOutlined style={{ marginRight: 8 }} /><a href="http://simcc.uesc.br/incite/industria4" target="_blank" rel="noopener noreferrer">Incite Indústria 4.0</a></p>
+        </div>
+    );
 
-        <Flex gap='large'>
-            <a href="https://simcc.uesc.br/" target="_blank">
-                <Card style={{ height: '100px' }} >
-                    <Simcc />
-                </Card>
-            </a>
-            <a href="http://simcc.uesc.br/incite/industria4" target="_blank">
-                <Card style={{ height: '100px' }} >
-                    <Flex gap={'large'}>
-                        <Typography.Title level={2} strong>
-                            Incite Industria 4.0
-                        </Typography.Title>
-                        <FaIndustry fontSize='2.5rem' />
-                    </Flex>
-                </Card>
-            </a>
+    return (
+        <Flex align="center" justify="space-between">
+            <Card style={{ width: '100%' }}>
+                <Flex gap={'large'} justify="space-between">
+                    <Typography.Title level={3} strong>
+                        Observatorio do Sistema de Mapeamento de Competências
+                    </Typography.Title>
+                    <Popover content={content} title="Outros Links">
+                        <ProductOutlined
+                            style={{
+                                fontSize: 35,
+                                display: 'flex',
+                                justifyContent: 'center',
+                                alignItems: 'center',
+                                cursor: 'pointer',
+                            }}
+                        />
+                    </Popover>
+                </Flex>
+            </Card>
         </Flex>
-    </Flex >
+    );
 }
 
-export default CustomHeader
+export default CustomHeader;
