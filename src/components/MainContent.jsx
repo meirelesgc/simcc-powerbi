@@ -18,6 +18,9 @@ const MainContent = () => {
             case "programs":
                 setPowerBI('https://app.powerbi.com/view?r=eyJrIjoiNmU0MzhlYTAtZGVmZi00NTAxLThhN2UtOTU2NWJkMzNmZjA5IiwidCI6IjcyNjE3ZGQ4LTM3YTUtNDJhMi04YjIwLTU5ZDJkMGM1MDcwNyJ9');
                 break;
+            case "ind4":
+                setPowerBI('https://app.powerbi.com/view?r=eyJrIjoiN2U2NWIxZTQtMjk5Zi00YTQzLWEyZGUtZTNmNThiOTNiOWJmIiwidCI6ImQyNjI5ODQyLTU0YzMtNDFlYy1iYWI1LTJhZGVlYmU5MzljMyJ9');
+                break;
         }
     };
 
