@@ -2,17 +2,14 @@ import './App.css';
 import React from 'react';
 import MainContent from './components/MainContent';
 import { Flex, Layout, Space, Typography } from 'antd';
-import Simcc from './svg/Simcc';
+import CustomHeader from './components/CustomHeader.jsx';
 
 const { Header, Content, Footer } = Layout;
 
 const App = () => {
     return <Layout className="layout">
         <Header className="header">
-            <Simcc />
-            <Typography.Title strong level={3}>
-                | Sistema de Mapeamento de Competências
-            </Typography.Title>
+            <CustomHeader />
         </Header>
         <Content className="content">
             <MainContent />

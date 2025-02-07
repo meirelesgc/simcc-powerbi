@@ -26,7 +26,7 @@ const MainContent = () => {
 
             <Flex vertical gap="8px">
                 <Typography.Title level={1} strong>
-                    {<RightOutlined strong />}Confira as estatísticas de <br />produção pesquisadores mapeados
+                    Confira as estatísticas de <br />produção pesquisadores mapeados
                 </Typography.Title>
                 <Typography.Text type="secondary" strong>
                     Explore painéis interativos com dados dos pesquisadores e instituições baianas, agora com<br />

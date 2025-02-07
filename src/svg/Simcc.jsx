@@ -1,5 +1,5 @@
 const Simcc = () => {
-    return <svg height="full" viewBox="0 0 406 137" fill="none" xmlns="http://www.w3.org/2000/svg">
+    return <svg height="2.5rem" viewBox="0 0 406 137" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_750_48)">
             <path d="M126.61 136.4H30.55C30.55 83.35 73.56 40.34 126.61 40.34V136.4Z" fill="#DE2834" />
             <path d="M40.7 4.9L1.33002 73.1C-2.43998 79.64 2.27002 87.81 9.82002 87.81H88.57C96.12 87.81 100.83 79.64 97.06 73.1L57.69 4.9C53.91 -1.63 44.48 -1.63 40.7 4.9Z" fill="#173DFF" />
