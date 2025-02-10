@@ -18,15 +18,11 @@ const MainContent = () => {
             case "programs":
                 setPowerBI('https://app.powerbi.com/view?r=eyJrIjoiNmU0MzhlYTAtZGVmZi00NTAxLThhN2UtOTU2NWJkMzNmZjA5IiwidCI6IjcyNjE3ZGQ4LTM3YTUtNDJhMi04YjIwLTU5ZDJkMGM1MDcwNyJ9');
                 break;
-            case "ind4":
-                setPowerBI('https://app.powerbi.com/view?r=eyJrIjoiN2U2NWIxZTQtMjk5Zi00YTQzLWEyZGUtZTNmNThiOTNiOWJmIiwidCI6ImQyNjI5ODQyLTU0YzMtNDFlYy1iYWI1LTJhZGVlYmU5MzljMyJ9');
-                break;
         }
     };
 
     return <Card style={{ borderRadius: '12px', height: '100%', overflow: 'auto', padding: '16px' }}>
-        <Flex vertical gap="16px">
-
+        <Flex vertical gap="16px" >
             <Flex vertical gap="8px">
                 <Typography.Title level={1} strong>
                     Confira as estatísticas de <br />produção pesquisadores mapeados

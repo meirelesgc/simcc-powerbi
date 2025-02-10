@@ -15,11 +15,6 @@ const segmentedConfig = [
         label: "Programas de pós-graduação",
         value: "programs",
         icon: <AuditOutlined />
-    },
-    {
-        label: "Incite Indústria 4.0",
-        value: "ind4",
-        icon: <FaIndustry />
     }
 ]
 export default segmentedConfig;
